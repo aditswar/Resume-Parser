@@ -31,21 +31,6 @@ Built with Python, Flask, spaCy, and pdfplumber.
 
 ---
 
-## Project Structure
-
-```
-Resume-Parser/
-├── app.py          # Flask app — routes and upload handling
-├── parser.py       # Core extraction logic (NLP + regex)
-├── database.py     # PostgreSQL connection and insert logic
-├── templates/
-│   └── index.html  # Upload form and results page
-├── resume.pdf      # Sample resume for testing
-└── resume.docx     # Sample resume for testing
-```
-
----
-
 ## Getting Started
 
 ### Prerequisites
@@ -106,7 +91,7 @@ Resume-Parser/
 3. `spaCy` NER identifies the candidate's name
 4. Regex patterns find emails and phone numbers
 5. Skills are matched against a predefined keyword list
-6. Extracted data is inserted into PostgreSQL via `psycopg2`
+6. Extracted data is inserted into PostgreSQL
 7. Results are rendered back on the page
 
 ---
